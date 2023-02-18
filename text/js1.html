@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="ad" onblur="tikla();" type="text" placeholder="adınızı giriniz :">
+    <p id="sonuc">...</p>
+    
+
+    <script>
+function tikla() {
+    var ad = document.getElementById("ad");
+    var uzunluk = ad.value.length;
+
+    if (uzunluk < 6) {
+        document.getElementById("sonuc").innerHTML = "Adınız en az 6 karakter olmalıdır.";
+    } else {
+        document.getElementById("sonuc").innerHTML = "Hoşgeldiniz,: " + ad.value;
+    }
+}
+
+    </script>
+</body>
+</html>
